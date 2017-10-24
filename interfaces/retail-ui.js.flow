@@ -1,147 +1,147 @@
 // @flow
-declare module 'retail-ui/components/Autocomplete' {
+declare module '@skbkontur/react-ui/Autocomplete' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/Button' {
+declare module '@skbkontur/react-ui/Button' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/Center' {
+declare module '@skbkontur/react-ui/Center' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/Checkbox' {
+declare module '@skbkontur/react-ui/Checkbox' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/ComboBox' {
+declare module '@skbkontur/react-ui/ComboBox' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/DatePicker' {
+declare module '@skbkontur/react-ui/DatePicker' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/DateSelect' {
+declare module '@skbkontur/react-ui/DateSelect' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/Dropdown' {
+declare module '@skbkontur/react-ui/Dropdown' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/FxInput' {
+declare module '@skbkontur/react-ui/FxInput' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/Gapped' {
+declare module '@skbkontur/react-ui/Gapped' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/Group' {
+declare module '@skbkontur/react-ui/Group' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/Icon' {
+declare module '@skbkontur/react-ui/Icon' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/Input' {
+declare module '@skbkontur/react-ui/Input' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/Link' {
+declare module '@skbkontur/react-ui/Link' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/Loader' {
+declare module '@skbkontur/react-ui/Loader' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/Modal' {
+declare module '@skbkontur/react-ui/Modal' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/PhoneInput' {
+declare module '@skbkontur/react-ui/PhoneInput' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/Radio' {
+declare module '@skbkontur/react-ui/Radio' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/RadioGroup' {
+declare module '@skbkontur/react-ui/RadioGroup' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/RenderContainer' {
+declare module '@skbkontur/react-ui/RenderContainer' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/ScrollContainer' {
+declare module '@skbkontur/react-ui/ScrollContainer' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/Select' {
+declare module '@skbkontur/react-ui/Select' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/Spinner' {
+declare module '@skbkontur/react-ui/Spinner' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/Sticky' {
+declare module '@skbkontur/react-ui/Sticky' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/Textarea' {
+declare module '@skbkontur/react-ui/Textarea' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/Tooltip' {
+declare module '@skbkontur/react-ui/Tooltip' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/MenuItem' {
+declare module '@skbkontur/react-ui/MenuItem' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/Logotype' {
+declare module '@skbkontur/react-ui/Logotype' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/MenuSeparator' {
+declare module '@skbkontur/react-ui/MenuSeparator' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/components/Hint' {
+declare module '@skbkontur/react-ui/Hint' {
     declare export default ReactClass<*>;
 }
 
-declare module 'retail-ui/lib/dom/addClass' {
+declare module '@skbkontur/react-ui/lib/dom/addClass' {
     declare function addClass(element: HTMLElement, className: string): void;
     declare export default addClass;
 }
 
-declare module 'retail-ui/lib/dom/removeClass' {
+declare module '@skbkontur/react-ui/lib/dom/removeClass' {
     declare function removeClass(element: HTMLElement, className: string): void;
     declare export default removeClass;
 }
 
-declare module 'retail-ui/lib/Upgrades' {
+declare module '@skbkontur/react-ui/lib/Upgrades' {
     declare type UpgradesInterface = {
         enableHeight34: () => void;
     };
     declare export default UpgradesInterface;
 }
 
-declare module 'retail-ui/lib/pluralize' {
+declare module '@skbkontur/react-ui/lib/pluralize' {
     declare function pluralize(count: number, one: string, few: string, many: string): string;
     declare export default pluralize;
 }
 
-declare module 'retail-ui/lib/listenFocusOutside' {
+declare module '@skbkontur/react-ui/lib/listenFocusOutside' {
     declare export type ListenFocusOutsideSubscription = {
         remove: () => void;
     }
@@ -151,7 +151,7 @@ declare module 'retail-ui/lib/listenFocusOutside' {
     declare export default ListenFocusOutsideInterface;
 }
 
-declare module 'retail-ui/lib/LayoutEvents' {
+declare module '@skbkontur/react-ui/lib/LayoutEvents' {
     declare export type LayoutEventsSubscription = {
         remove: () => void;
     }
@@ -163,7 +163,7 @@ declare module 'retail-ui/lib/LayoutEvents' {
     declare export default LayoutEventsInterface;
 }
 
-declare module 'retail-ui/lib/pluralize' {
+declare module '@skbkontur/react-ui/lib/pluralize' {
     declare type PluralizeInterface = (n: number, one: string, few: string, many: string) => string
     declare export default PluralizeInterface;
 }

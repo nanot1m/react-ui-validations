@@ -1,7 +1,6 @@
 // @flow
 import React from "react";
 import PropTypes from "prop-types";
-import Tooltip from "retail-ui/components/Tooltip";
 import ReactUiDetection from "../ReactUiDetection";
 
 type ValidationTooltipProps = {
@@ -22,6 +21,7 @@ export default class ValidationTooltip extends React.Component {
 
     static contextTypes = {
         validationTooltipContext: PropTypes.any,
+        tooltipComponent: PropTypes.any,
     };
 
     componentWillReceiveProps(nextProps: ValidationTooltipProps) {
@@ -72,6 +72,7 @@ export default class ValidationTooltip extends React.Component {
     }
 
     render(): React.Element<*> {
+        const Tooltip = this.context.tooltipComponent;
         const { children, ...props } = this.props;
         const onlyChild = React.Children.only(children);
         const childProps: any = {

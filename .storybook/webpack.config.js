@@ -34,6 +34,12 @@ module.exports = function(storybookBaseConfig, configType) {
             loaders: ['classnames', 'style', 'css?localIdentName=[name]-[local]-[hash:base64:4]', 'less'],
         },
         {
+            test: /\.css$/,
+            include: /@skbkontur\/react-ui/,
+            exclude: /@skbkontur\/react-ui\/node_modules/,
+            loaders: ['style', 'css?localIdentName=[name]-[local]-[hash:base64:4]'],
+        },
+        {
             test: /\.(woff|woff2|eot|svg|ttf|gif|png)$/,
             exclude: /node_modules/,
             loader: 'file-loader',
@@ -59,7 +65,7 @@ module.exports = function(storybookBaseConfig, configType) {
         },
         {
             test: /\.(woff|woff2|eot|svg|ttf|gif|png)$/,
-            include: /retail-ui/,
+            include: /retail-ui|@skbkontur\/react-ui/,
             exclude: /retail-ui(\\|\/)node_modules/,
             loader: 'file-loader',
         },

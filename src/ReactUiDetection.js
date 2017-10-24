@@ -1,13 +1,12 @@
 // @flow
-import DatePicker from "retail-ui/components/DatePicker";
-import RadioGroup from "retail-ui/components/RadioGroup";
+const COMPONENT_NAME_PROP = "__REACT_UI_COMPONENT_NAME__";
 
 export default class ReactUiDetection {
     static isDatePicker(childrenArray: any): boolean {
-        return childrenArray != null && childrenArray.type === DatePicker;
+        return childrenArray != null && childrenArray.type[COMPONENT_NAME_PROP] === "DatePicker";
     }
 
     static isRadioGroup(childrenArray: any): boolean {
-        return childrenArray != null && childrenArray.type === RadioGroup;
+        return childrenArray != null && childrenArray.type[COMPONENT_NAME_PROP] === "RadioGroup";
     }
 }

@@ -6,6 +6,7 @@ import ValidationTooltip from "./ValidationTooltip";
 
 type ValidationTooltipContextProps = {
     children?: any,
+    tooltipComponent: any,
 };
 
 type ValidationTooltipContextContext = {
@@ -17,6 +18,7 @@ export default class ValidationTooltipContext extends React.Component {
 
     static childContextTypes = {
         validationTooltipContext: PropTypes.any,
+        tooltipComponent: PropTypes.any,
     };
 
     focusedValidationTooltip: ValidationTooltip | null = null;
@@ -45,6 +47,7 @@ export default class ValidationTooltipContext extends React.Component {
     getChildContext(): ValidationTooltipContextContext {
         return {
             validationTooltipContext: this,
+            tooltipComponent: this.props.tooltipComponent,
         };
     }
 
